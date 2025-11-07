@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home.component/home.component';
+import { PersonasapiComponent } from './components/personasapi.component/personasapi.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+ 
+  { path: '', component: HomeComponent },
+  { path: 'personas', component: PersonasapiComponent },
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

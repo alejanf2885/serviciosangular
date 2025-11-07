@@ -1,0 +1,18 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+  @for (persona of personas; track $index) {
+    <div class="bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition-shadow duration-300">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">
+        {{ persona.Nombre }}
+      </h3>
+      <p class="text-gray-600">
+        <span class="font-medium text-gray-700">ID:</span> {{ persona.IdPersona }}
+      </p>
+      <p class="text-gray-600">
+        <span class="font-medium text-gray-700">Email:</span> {{ persona.Email }}
+      </p>
+      <p class="text-gray-600">
+        <span class="font-medium text-gray-700">Edad:</span> {{ persona.Edad }}
+      </p>
+    </div>
+  }
+</div>
